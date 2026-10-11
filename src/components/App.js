@@ -8,15 +8,15 @@ import './../styles/App.css';
 
 
 const App = () => {
-  
+
 const [weather,setweather]=useState({temperature: 25, condition: "sunny"});
 const colour=weather.temperature > 20 ? "red" : "blue";
 
   return (
     <div>
-      <span>
-      <p style={{ color: colour }}>{weather.temperature}°C</p>
-      </span>
+      
+      <p style={{ color: colour }}><span>{weather.temperature}°C</span></p>
+      
       <p>{weather.condition}</p>
         {/* Do not remove the main div */}
     </div>
