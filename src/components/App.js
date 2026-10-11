@@ -3,12 +3,15 @@ import React from "react";
 import {useState} from 'react';
 import './../styles/App.css';
 
-const [weather,setweather]=useState({temperature: 25, condition: "sunny"});
-const colour=weather.temperature > 20 ? "red" : "blue";
+
 
 
 
 const App = () => {
+  
+const [weather,setweather]=useState({temperature: 25, condition: "sunny"});
+const colour=weather.temperature > 20 ? "red" : "blue";
+
   return (
     <div>
       <span>
